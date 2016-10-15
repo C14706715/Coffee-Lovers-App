@@ -10,14 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jake.coffee_lovers_app.MainActivity">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Coffee Lovers"
         android:id="@+id/TitleID"
-        android:textColor="?android:attr/textColorSearchUrl"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="30sp"
         tools:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/GalleryScrollID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/GalleryLayoutID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
 </RelativeLayout>
